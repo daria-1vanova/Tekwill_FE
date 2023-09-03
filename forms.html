@@ -25,6 +25,24 @@
                 <label for="birthday">Date of Birth</label>
                 <input type="date" id="birthday" name="date-of-birth">
             </fieldset>
+            <fieldset>
+                <legend>Address Information:</legend>
+                <label for="street">Street Address:</label>
+                <textarea name="street" id="street" cols="20" rows="2"></textarea><br>
+                <label for="country">Country:</label>
+                <input list="country" name="country">
+                <datalist id="country">
+                    <option value="USA">
+                    <option value="India">
+                    <option value="China">
+                    <option value="Canada">
+                    <option value="Japan">
+                </datalist><br>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city"><br>
+                <label for="postal-code">Postal Code:</label>
+                <input type="number" id="postal-code" name="postal-code">
+            </fieldset>
         </form>
     </body>
 </html>
