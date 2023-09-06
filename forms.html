@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Basic User Information:</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <label for="confirm">Confirm Password:</label>
+                <input type="password" id="confirm" name="password"><br>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label><br>
+                <label for="birthday">Date of Birth</label>
+                <input type="date" id="birthday" name="date-of-birth">
+            </fieldset>
+            <fieldset>
+                <legend>Address Information:</legend>
+                <label for="street">Street Address:</label>
+                <textarea name="street" id="street" cols="20" rows="2"></textarea><br>
+                <label>Country:</label>
+                <input list="country" name="country">
+                <datalist id="country">
+                    <option value="USA">
+                    <option value="India">
+                    <option value="China">
+                    <option value="Canada">
+                    <option value="Japan">
+                </datalist><br>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city"><br>
+                <label for="postal-code">Postal Code:</label>
+                <input type="number" id="postal-code" name="postal-code">
+            </fieldset>
+            <fieldset>
+                <legend>Preferences:</legend>
+                <label>Prefered Contact Method:</label>
+                <input type="checkbox" id="by-email" name="email" value="email">
+                <label for="by-email">Email</label>
+                <input type="checkbox" id="by-phone" name="phone" value="phone">
+                <label for="by-phone">Phone</label>
+                <input type="checkbox" id="by-mail" name="mail" value="mail">
+                <label for="by-mail">Postal Mail</label><br>
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color">
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information:</legend>
+                <label>How did you hear about us?</label>
+                <input list="source" name="source">
+                <datalist id="source">
+                    <option value="Internet">
+                    <option value="Friend">
+                    <option value="Advertisement">
+                </datalist><br>
+                <label for="feedback">Feedback/Comments:</label>
+                <textarea name="feedback" id="feedback" cols="20" rows="2"></textarea><br>
+            </fieldset>
+            <fieldset>
+                <legend>Profile:</legend>
+                <label for="picture">Upload a Profile Picture:</label>
+                <input type="file" id="picture" name="picture"><br>
+                <label for="url">Website URL:</label>
+                <input type="url" id="url" name="url"><br>
+                <label for="level">Experience Level with HTML:</label>
+                <input type="range" id="level" name="level" min="1" max="10">
+            </fieldset>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
