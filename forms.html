@@ -2,6 +2,77 @@
 <html>
     <head>
         <title>Forms</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #FAFAFA;
+            }
+            form {
+                max-width: 500px;
+                padding: 20px;
+                background-color: white;
+                margin: 0 auto;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+            }
+            fieldset{
+                padding: 20px;
+                margin-bottom: 20px;
+                border-width: 1px;
+                border-radius: 4px;
+                border-color: teal;
+            }
+            legend {
+                font-size: large;
+                font-style: italic;
+                color: teal;
+            }
+            label {
+                font-weight: 600;
+                font-size: 14px;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="password"],
+            input[type="date"],
+            input[type="number"],
+            input[type="url"],
+            input[list],
+            textarea {
+                margin: 8px 0 16px 0;
+                border-width: 1px;
+                border-color: #bbbbbb;
+                border-style: groove;
+                border-radius: 4px;
+                height: 32px;
+                width: 100%;
+                max-width: 550px;
+            }
+            input[type="checkbox"],
+            input[type="radio"],
+            input[type="file"] {
+                margin: 8px 0 16px 4px;
+            }
+            input:focus, textarea:focus {
+                outline: none;
+                border: 1px solid teal;
+            }
+            input[type="submit"],
+            input[type="reset"] {
+                margin: 5px;
+                background-color: #007dff;
+                color:white;
+                height: 40px;
+                width: 90px;
+                border-radius:5px;
+                border-color: transparent;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                font-weight: 600;
+            }
+            input[type="reset"] {
+                background-color: #666666;
+            }
+        </style>
     </head>
     <body>
         <form>
@@ -15,13 +86,13 @@
                 <input type="password" id="password" name="password">
                 <label for="confirm">Confirm Password:</label>
                 <input type="password" id="confirm" name="password"><br>
-                <label>Gender:</label>
+                <label>Gender:</label><br>
                 <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label>
+                <label for="male" style="font-weight: 500;">Male</label>
                 <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label>
+                <label for="female" style="font-weight: 500;">Female</label>
                 <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label><br>
+                <label for="other" style="font-weight: 500;">Other</label><br>
                 <label for="birthday">Date of Birth</label>
                 <input type="date" id="birthday" name="date-of-birth">
             </fieldset>
@@ -45,13 +116,13 @@
             </fieldset>
             <fieldset>
                 <legend>Preferences:</legend>
-                <label>Prefered Contact Method:</label>
+                <label>Prefered Contact Method:</label><br>
                 <input type="checkbox" id="by-email" name="email" value="email">
-                <label for="by-email">Email</label>
+                <label for="by-email" style="font-weight: 500;">Email</label>
                 <input type="checkbox" id="by-phone" name="phone" value="phone">
-                <label for="by-phone">Phone</label>
+                <label for="by-phone" style="font-weight: 500;">Phone</label>
                 <input type="checkbox" id="by-mail" name="mail" value="mail">
-                <label for="by-mail">Postal Mail</label><br>
+                <label for="by-mail" style="font-weight: 500;">Postal Mail</label><br>
                 <label for="color">Favorite Color:</label>
                 <input type="color" id="color" name="color">
             </fieldset>
